@@ -1,12 +1,9 @@
 {...}: {
   imports = [
+    ./mini.nix
     ./todo.nix
     ./trouble.nix
   ];
-
-  plugins.vim-surround.enable = true;
-  plugins.trim.enable = true;
-  plugins.mini.enable = true;
 
   plugins.crates = {
     enable = true;

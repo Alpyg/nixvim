@@ -20,6 +20,8 @@ in {
   imports = [
     ./options.nix
     ./keymaps.nix
+
+    ./plugins/cmp.nix
     ./plugins/lsp.nix
 
     ./plugins/ui
