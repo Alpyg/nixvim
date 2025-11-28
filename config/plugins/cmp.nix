@@ -8,7 +8,7 @@
       sources = [
         {
           name = "nvim_lsp";
-          keywordLength = 2;
+          keywordLength = 3;
         }
         {
           name = "buffer";
@@ -16,7 +16,7 @@
         }
         {
           name = "path";
-          keywordLength = 2;
+          keywordLength = 3;
         }
         {
           name = "luasnip";
@@ -24,11 +24,7 @@
         }
         {
           name = "emoji";
-          keywordLength = 2;
-        }
-        {
-          name = "cmdline";
-          keywordLength = 2;
+          keywordLength = 3;
         }
       ];
 
@@ -36,7 +32,6 @@
 
       mapping = lib.mkForce {
         "<CR>" = "cmp.mapping.confirm({select = false})";
-        "<ESC>" = "cmp.mapping.abort()";
 
         "<Up>" = "cmp.mapping.select_prev_item({behavior = cmp.SelectBehavior.Insert})";
         "<Down>" = "cmp.mapping.select_next_item({behavior = cmp.SelectBehavior.Insert})";

@@ -12,6 +12,4 @@
   imports = (map (name: ./. + "/${name}") nixFiles) ++ (map (name: ./. + "/${name}") dirs);
 in {
   imports = imports;
-
-  plugins.web-devicons.enable = true;
 }
